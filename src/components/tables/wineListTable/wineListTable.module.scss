@@ -1,0 +1,50 @@
+.container {
+  &_table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0 1em;
+
+    &_row_header {
+      & > tr {
+        background: #212529;
+
+        th {
+          height: 48px;
+          text-align: start;
+          padding-left: 33px;
+          span {
+            color: #fff;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+      }
+    }
+    &_row_body {
+      & > tr {
+        background: #fff2f2;
+        td {
+          text-align: start;
+          padding-top: 14px;
+          padding-left: 33px;
+          span {
+            color: #fff;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+      }
+      & > tr:last-child {
+        & > td {
+          padding-bottom: 14px;
+        }
+      }
+    }
+  }
+}
