@@ -1,4 +1,3 @@
-import React from "react";
 import CreateWineForm from "../../components/forms/createWineForm/CreateWineForm";
 
 const AddWine = () => {

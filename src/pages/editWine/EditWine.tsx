@@ -1,4 +1,4 @@
-import React from "react";
+
 import UpdateWineForm from "../../components/forms/updateWineForm/UpdateWineForm";
 
 const EditWine = () => {

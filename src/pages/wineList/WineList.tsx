@@ -5,11 +5,11 @@ import PrimaryBtn from "../../components/buttons/customBtns/primaryBtn/PrimaryBt
 import { useNavigate } from "react-router-dom";
 interface Props {}
 
-const WineList: React.FC<Props> = (props) => {
+const WineList: React.FC<Props> = () => {
   const [data, setData] = React.useState([]);
   // enviroment variables are a better way to store the url
   const localhost = "http://localhost:3000/wine/";
-  const vercel = "https://wine-app-frontend.vercel.app/wine";
+  // const vercel = "https://wine-app-frontend.vercel.app/wine";
   const getWineList = async () => {
     const token = localStorage.getItem("token");
    
@@ -30,7 +30,7 @@ const WineList: React.FC<Props> = (props) => {
     }
      
   };
-  const handleDelete = async (id: string) => {};
+
   const navigate = useNavigate();
   const toCreate = () => {
     navigate("/create");

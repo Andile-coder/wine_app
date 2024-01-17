@@ -4,7 +4,7 @@ import styles from "./login.module.scss";
 
 interface Props {}
 
-const Login: React.FC<Props> = (props) => {
+const Login: React.FC<Props> = () => {
   return (
     <div className={styles.container}>
       <h1>welcome to Wine App</h1>

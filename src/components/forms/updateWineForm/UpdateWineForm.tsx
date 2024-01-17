@@ -6,7 +6,7 @@ interface Props {
 
 }
 
-const UpdateWineForm: React.FC<Props> = (props) => {
+const UpdateWineForm: React.FC<Props> = () => {
     const [formData, setFormData] = React.useState({
         name: "",
         year: "",
@@ -19,7 +19,7 @@ const UpdateWineForm: React.FC<Props> = (props) => {
     //get wine_id from url
     const wine_id = window.location.pathname.split("/")[2];
     const localhost = `http://localhost:3000/wine/${wine_id}`;
-    const vercel = `https://wine-app-frontend.vercel.app/wine/${wine_id}`;
+    // const vercel = `https://wine-app-frontend.vercel.app/wine/${wine_id}`;
     const getWine = async () => {
         let response = await fetch(localhost, {
             method: "GET",
@@ -39,7 +39,7 @@ const UpdateWineForm: React.FC<Props> = (props) => {
     
 
     const [hideDateConsumed, setHideDateConsumed] = React.useState(formData.consumed);
-    console.log("consumed",formData.consumed);
+   
     
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         if (e.target.name === "date_consumed") {

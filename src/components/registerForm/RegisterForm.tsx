@@ -5,7 +5,7 @@ import CustomInput from "../inputs/customInput/CustomInput";
 import CustomBtn from "../buttons/customBtns/primaryBtn/PrimaryBtn";
 interface Props {}
 
-const RegisterForm: React.FC<Props> = (props) => {
+const RegisterForm: React.FC<Props> = () => {
   const [registerForm, setRegisterForm] = React.useState({
     username: "",
     email: "",
@@ -15,7 +15,7 @@ const RegisterForm: React.FC<Props> = (props) => {
 
   // environment variables should be used here
   const localhost = "http://localhost:3000/register";
-  const vercel = "https://wine-app-frontend.vercel.app/register";
+  // const vercel = "https://wine-app-frontend.vercel.app/register";
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setRegisterForm({ ...registerForm, [e.target.name]: e.target.value });

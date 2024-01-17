@@ -77,7 +77,7 @@ interface TableRowProps {
 }
 const TableRow: React.FC<TableRowProps> = (props) => {
   const navigate = useNavigate();
-  const [stateRefresh, setStateRefresh] = React.useState(false);
+
   const toEdit = () => {
     navigate(`/edit/${props.wine.wine_id}`);
   }

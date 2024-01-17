@@ -5,19 +5,19 @@ import CustomBtn from "../../buttons/customBtns/primaryBtn/PrimaryBtn";
 import CustomInput from "../../inputs/customInput/CustomInput";
 interface Props {}
 
-const LoginForm: React.FC<Props> = (props) => {
+const LoginForm: React.FC<Props> = () => {
   const [loginForm, setLoginForm] = React.useState({
     email: "",
     password: "",
   });
   // environment variables should be used here
   const localhost = "http://localhost:3000/login";
-  const vercel = "https://wine-app-frontend.vercel.app/login";
+  // const vercel = "https://wine-app-frontend.vercel.app/login";
 
   const navigate = useNavigate();
   const handleLogin = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(loginForm);
+  
    
     fetch(localhost, {
       method: "POST",

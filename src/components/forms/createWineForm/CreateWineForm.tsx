@@ -6,7 +6,7 @@ interface Props {
 
 }
 
-const CreateWineForm: React.FC<Props> = (props) => {
+const CreateWineForm: React.FC<Props> = () => {
     const [input, setInput] = React.useState({
         name:"",
         varietal:"",
